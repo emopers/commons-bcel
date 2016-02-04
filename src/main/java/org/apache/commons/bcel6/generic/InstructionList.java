@@ -959,6 +959,7 @@ public class InstructionList implements Iterable<InstructionHandle> {
             System.err.println(e);
             return new byte[0];
         }
+        out.flush();
         return b.toByteArray();
     }
 
